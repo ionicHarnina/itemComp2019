@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>tercera</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item (click)="testClick()" lines="full">
+        <!-- un avatar es una imagen circular que se puede poner al principio con start -->
+          <ion-avatar slot="start">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+          </ion-avatar>
+          <ion-label>
+            Avatar Start, Button Item
+          </ion-label>
+        </ion-item>
+        <ion-item>
+           
+            <!-- Esto es una miniatura con slot se puede poner al final -->
+            <ion-thumbnail slot="end">
+              <!-- aunque lo pongas despues start lo coloca al inicio -->
+            <!-- <ion-thumbnail slot="start"> -->
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+            </ion-thumbnail>
+            <ion-label>
+                Thumbnail End, Anchor Item
+              </ion-label>
+          </ion-item>
+          <ion-item>
+              <ion-thumbnail slot="start">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+                </ion-thumbnail>
+                <ion-label>
+                    <h2>H2 Title Text</h2>
+                    <p>Button on right</p>
+                  </ion-label>
+                  <ion-button fill="outline" slot="start">View</ion-button>
+          </ion-item>
+          <!-- como es un elemento clikclable se puede usar como boton -->
+          <ion-item >
+              <ion-thumbnail slot="start">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==">
+              </ion-thumbnail>
+              <ion-label (click)="testClick()">
+                <h3>H3 Title Text</h3>
+                <p>Icon on right</p>
+              </ion-label>
+              <ion-icon name="close-circle" slot="end"></ion-icon>
+            </ion-item>
+            <ion-item>
+                <ion-button slot="start">
+                  Start
+                </ion-button>
+                <ion-label>Button Start/End</ion-label>
+                <ion-button slot="end">
+                  End
+                </ion-button>
+                <!-- Ponlo despues -->
+                 <ion-button slot="end">
+                  NoEnd
+                </ion-button> -->
+              </ion-item>
+              <ion-item>
+                  <ion-label>
+                    Two Icons End
+                  </ion-label>
+                  <ion-icon name="checkmark-circle" slot="end"></ion-icon>
+                  <ion-icon name="shuffle" slot="end"></ion-icon>
+                </ion-item>
+              
+</ion-content>

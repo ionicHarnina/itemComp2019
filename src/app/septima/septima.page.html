@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>septima</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item-sliding *ngFor = "let sitio of sitios">
+      <ion-item>
+        <h2>{{sitio}}</h2>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-button slot="end">NOSE</ion-button>
+        <ion-button slot="end">borra</ion-button>
+        <ion-button slot="end">alquila</ion-button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

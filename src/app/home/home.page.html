@@ -7,8 +7,24 @@
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <!-- Si se pone solo se puede poner un texto -->
+  <ion-item>Solo no hace nada</ion-item>
+  <ion-item>
+    <ion-label> Estoy asociado a este boton</ion-label>
+    <ion-button slot="start">Aprietame</ion-button>
+  </ion-item>
+  <ion-item color="secondary">
+    <ion-label>Algo que quieres poner</ion-label>
+    <ion-button>Botonaco</ion-button>
+  </ion-item>
+  <ion-item color="primary">
+    <ion-label>Algo que quieres poner</ion-label>
+    <ion-button>Botonaco</ion-button>
+  </ion-item>
+  <ion-button routerLink="/segunda">Segunda</ion-button>
+  <ion-button shape="round" routerLink="/tercera">Tercera</ion-button>
+  <ion-button shape="round" routerLink="/cuarto">Cuarta</ion-button>
+  <ion-button shape="round" routerLink="/quinta">quinta</ion-button>
+  <ion-button shape="round" routerLink="/sexta">sexta</ion-button>
+  <ion-button shape="round" routerLink="/septima">septima</ion-button>
 </ion-content>

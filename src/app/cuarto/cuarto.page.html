@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>cuarto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-label>Range</ion-label>
+        <ion-range></ion-range>
+      </ion-item>
+      <!-- Sin el sliding no sales las item options --> 
+      <ion-item-sliding> 
+          <ion-item>
+              <h2> Texto del item</h2>
+            </ion-item>
+            <ion-item-options side="start" (ionSwipe)="mostrar()">
+              <ion-button color="danger"><ion-icon name="trash"></ion-icon></ion-button>
+            </ion-item-options>
+      </ion-item-sliding>
+</ion-content>
